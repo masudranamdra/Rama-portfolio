@@ -19,20 +19,27 @@
     color: #FD6E0A;
 }
 
-.section-heading{
+.section-heading {
     text-align: center;
 }
-.section-heading h2{
+
+.section-heading h2 {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 30px;
 }
-.section-heading p{
+
+.section-heading p {
     font-size: 18px;
     margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
 }
+
+.text-center {
+    text-align: center;
+}
+
 .btn {
     color: #FFFFFF;
     background-color: #FD6E0A;
@@ -42,6 +49,14 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FD6E0A;
+    border: none;
 }
 
 /* main style */
@@ -49,9 +64,9 @@
 header {
     background-color: #FFF8F3;
     padding-top: 50px;
-    background: url(images/developer.png),url(images/header_bg.png),#FFF8F3;
+    background: url(images/developer.png), url(images/header_bg.png), #FFF8F3;
     background-repeat: no-repeat;
-    background-position: top left,bottom right;
+    background-position: 10px 38px , bottom right;
 }
 
 nav .menu {
@@ -69,7 +84,7 @@ nav .menu a {
 
 nav {
     width: 71%;
-    max-width: 1140px;
+    max-width: 2200px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -108,31 +123,156 @@ nav {
     line-height: 30px;
     margin-bottom: 30px;
 }
-#banner .banner-image img{
+
+#banner .banner-image img {
     max-width: 585px;
     vertical-align: middle;
 }
-#about{
+
+#about,
+#resume {
     padding-top: 130px;
 }
-#about .about-container{
+
+#about .about-container {
     width: 71%;
     max-width: 1140px;
     margin: 0 auto;
     text-align: center;
     background-color: #FFF8F3;
     padding: 131px 156px;
+    border-radius: 20px;
 }
-#about .about-container .about-info{
+
+#about .about-container .about-info {
     justify-content: space-between;
     display: flex;
 }
+
 .about-container .about-info p {
     font-size: 20px;
     margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
 }
-.about-container .about-info h4{
+
+.about-container .about-info h4 {
     font-size: 20px;
+}
+
+#skills {
+    padding: 130px;
+}
+
+#skills .skills-contrnt .skills-box {
+    display: flex;
+    gap: 24px;
+}
+
+.skills-box .skills-card {
+    padding: 30px;
+    max-width: 267px;
+    /* border: 1px solid black; */
+    box-shadow: 0 6px 30px 0 #00000020;
+}
+
+.skills-card img {
+    max-width: 44px;
+    margin-bottom: 30px;
+}
+
+.skills-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-card p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+
+}
+
+#resume .resume-container {
+    width: 71%;
+    max-width: 1140px;
+    margin: 113px auto 0;
+    display: flex;
+    gap: 24px;
+}
+
+#resume .resume-container .section-title {
+    color: #474747;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#resume .resume-container .resume-title {
+    max-width: 511px;
+    margin: 47px;
+}
+
+#resume .resume-container .card-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #474747;
+}
+
+#resume .resume-container .card-info {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #757575;
+}
+
+#resume .resume-container .card-text {
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+}
+
+#resume .resume-container hr {
+    margin: 30px 0px;
+}
+
+footer {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    padding: 130px;
+}
+
+footer .footer-container {
+    width: 71;
+    max-width: 1140;
+    margin: 0 auto;
+    display: flex;
+    gap: 200px;
+}
+
+.footer-container .social {
+    max-width: 562px;
+}
+.footer-container .social p{
+    color: #47474747;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.footer-container h2{
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.footer-container .icons a{
+    margin-right: 24px;
+}
+.footer-container form input[type="text"],.footer-container form textarea{
+     width: 461px;
+     padding: 18px 31px;
+     margin-bottom: 24px;
+     border: none;
+     border-radius: 5px;
+     color: #757575;
 }
